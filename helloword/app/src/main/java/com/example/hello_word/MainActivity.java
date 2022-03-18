@@ -6,6 +6,7 @@ import com.google.android.material.snackbar.Snackbar;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.util.Log;
 import android.view.View;
 
 import androidx.navigation.NavController;
@@ -17,6 +18,7 @@ import com.example.hello_word.databinding.ActivityMainBinding;
 
 import android.view.Menu;
 import android.view.MenuItem;
+import android.widget.Toast;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -43,6 +45,14 @@ public class MainActivity extends AppCompatActivity {
                         .setAction("Action", null).show();
             }
         });
+        Log.i("info","teste");
+        Toast.makeText(this, "Hello Word", Toast.LENGTH_SHORT).show();
+
+
+    }
+    public void meuclick(View v){
+        Log.i("info", "dale");
+        Toast.makeText(this, "Você clicou no botão", Toast.LENGTH_SHORT).show();
     }
 
     @Override
